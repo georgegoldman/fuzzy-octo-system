@@ -13,13 +13,7 @@ This project is designed to help you kickstart your C++ projects, providing a ro
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-- [Prerequisites](#prerequisites)
-- [Building](#building)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Hello World](/tree/helloworld)
 
 ## Getting Started
 
