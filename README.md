@@ -14,6 +14,7 @@ This project is designed to help you kickstart your C++ projects, providing a ro
 ## Table of Contents
 
 - [Hello World](https://github.com/georgegoldman/fuzzy-octo-system/tree/helloworld)
+    -[Exercise](https://github.com/georgegoldman/fuzzy-octo-system/tree/execercise)
 
 ## Getting Started
 
