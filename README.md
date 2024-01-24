@@ -10,9 +10,7 @@ This project is designed to help you kickstart your C++ projects, providing a ro
 
 Provide information on how to get started with your project.
 
-### Prerequisites
 
-List the dependencies and prerequisites needed to run your project.
 
 ```bash
 # run commands
