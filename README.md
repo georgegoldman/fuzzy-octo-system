@@ -9,7 +9,7 @@ List the dependencies and prerequisites needed to run your project.
 sudo apt-get install -y cmake g++ 
 
 ```
-**Commands**
+## Commands
 
 These are provided by CMake and are the essential building blocks of the DSL, as they allow you to manipulate variables. They include control flow constructs and the target_* family of commands. You can find a complete list of available commands with:
 
@@ -24,7 +24,7 @@ cmake --help-variable PROJECT_BINARY_DIR
 cmake --help-command-list
 ```
 
-**Modules**
+## Modules
 
 These are collections of functions and macros and are either CMake- or user-defined. CMake comes with a rich ecosystem of modules and you will probably write a few of your own to encapulate frequently used functions or macros in your CMake scripts. You will have to include the module to use its contents, for example:
 
@@ -36,3 +36,6 @@ $ cmake --help-module-list
 ```
 $ cmake --help-module CMakePrintHelpers
 ```
+
+## Flow control
+
