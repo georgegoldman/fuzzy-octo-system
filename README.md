@@ -6,9 +6,11 @@ This repository serves as a template for building C++ projects using CMake, prov
 This project is designed to help you kickstart your C++ projects, providing a robust foundation for development and collaboration. Feel free to fork and adapt it to suit your specific needs.
 
 
-## Getting Started
 
-Provide information on how to get started with your project.
+**Here i implemented**
+- Write a CMakeLists.txt to compile the source files Message.hpp and Message.cpp into a library. Do not specify the type of library, shared or static, explicitly.
+- Add an executable from the hello-world.cpp source file.
+- Link the library into the executable.
 
 
 
