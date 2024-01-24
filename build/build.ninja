@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Hello
+# Project: message
 # Configurations: 
 # =============================================================================
 
@@ -36,36 +36,36 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/goldman/fuzzy-octo-system/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target hello
+# Object build statements for EXECUTABLE target hello-world.cpp
 
 
 #############################################
-# Order-only phony target for hello
+# Order-only phony target for hello-world.cpp
 
-build cmake_object_order_depends_target_hello: phony || CMakeFiles/hello.dir
+build cmake_object_order_depends_target_hello-world.cpp: phony || CMakeFiles/hello-world.cpp.dir
 
-build CMakeFiles/hello.dir/main.cc.o: CXX_COMPILER__hello_unscanned_ /home/goldman/fuzzy-octo-system/main.cc || cmake_object_order_depends_target_hello
-  DEP_FILE = CMakeFiles/hello.dir/main.cc.o.d
-  OBJECT_DIR = CMakeFiles/hello.dir
-  OBJECT_FILE_DIR = CMakeFiles/hello.dir
-  TARGET_COMPILE_PDB = CMakeFiles/hello.dir/
-  TARGET_PDB = hello.pdb
+build CMakeFiles/hello-world.cpp.dir/Message.cpp.o: CXX_COMPILER__hello-world.2ecpp_unscanned_ /home/goldman/fuzzy-octo-system/Message.cpp || cmake_object_order_depends_target_hello-world.cpp
+  DEP_FILE = CMakeFiles/hello-world.cpp.dir/Message.cpp.o.d
+  OBJECT_DIR = CMakeFiles/hello-world.cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles/hello-world.cpp.dir
+  TARGET_COMPILE_PDB = CMakeFiles/hello-world.cpp.dir/
+  TARGET_PDB = hello-world.cpp.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target hello
+# Link build statements for EXECUTABLE target hello-world.cpp
 
 
 #############################################
-# Link the executable hello
+# Link the executable hello-world.cpp
 
-build hello: CXX_EXECUTABLE_LINKER__hello_ CMakeFiles/hello.dir/main.cc.o
-  OBJECT_DIR = CMakeFiles/hello.dir
+build hello-world.cpp: CXX_EXECUTABLE_LINKER__hello-world.2ecpp_ CMakeFiles/hello-world.cpp.dir/Message.cpp.o
+  OBJECT_DIR = CMakeFiles/hello-world.cpp.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/hello.dir/
-  TARGET_FILE = hello
-  TARGET_PDB = hello.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/hello-world.cpp.dir/
+  TARGET_FILE = hello-world.cpp
+  TARGET_PDB = hello-world.cpp.pdb
 
 
 #############################################
@@ -101,7 +101,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/goldman/fuzzy-octo-system/build
 
-build all: phony hello
+build all: phony hello-world.cpp
 
 # =============================================================================
 # Built-in targets
