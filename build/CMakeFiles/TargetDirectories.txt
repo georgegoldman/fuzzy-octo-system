@@ -1,3 +1,4 @@
-/home/goldman/fuzzy-octo-system/build/CMakeFiles/hello-world.cpp.dir
+/home/goldman/fuzzy-octo-system/build/CMakeFiles/message.dir
+/home/goldman/fuzzy-octo-system/build/CMakeFiles/hello-world.dir
 /home/goldman/fuzzy-octo-system/build/CMakeFiles/edit_cache.dir
 /home/goldman/fuzzy-octo-system/build/CMakeFiles/rebuild_cache.dir
