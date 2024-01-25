@@ -147,7 +147,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=cmake-syntax
+CMAKE_PROJECT_NAME:STATIC=options
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0
@@ -229,6 +229,9 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Compile sources into a library
+USE_LIBRARY:BOOL=OFF
+
 //Value Computed by CMake
 cmake-syntax_BINARY_DIR:STATIC=/home/goldman/fuzzy-octo-system/build
 
@@ -238,6 +241,15 @@ cmake-syntax_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 cmake-syntax_SOURCE_DIR:STATIC=/home/goldman/fuzzy-octo-system
 
+//Value Computed by CMake
+libraries_BINARY_DIR:STATIC=/home/goldman/fuzzy-octo-system/build
+
+//Value Computed by CMake
+libraries_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+libraries_SOURCE_DIR:STATIC=/home/goldman/fuzzy-octo-system
+
 message_BINARY_DIR:STATIC=/home/goldman/fuzzy-octo-system/build
 
 //Value Computed by CMake
@@ -245,6 +257,15 @@ message_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 message_SOURCE_DIR:STATIC=/home/goldman/fuzzy-octo-system
+
+//Value Computed by CMake
+options_BINARY_DIR:STATIC=/home/goldman/fuzzy-octo-system/build
+
+//Value Computed by CMake
+options_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+options_SOURCE_DIR:STATIC=/home/goldman/fuzzy-octo-system
 
 
 ########################

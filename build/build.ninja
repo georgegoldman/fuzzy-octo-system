@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: cmake-syntax
+# Project: options
 # Configurations: 
 # =============================================================================
 
@@ -36,42 +36,18 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/goldman/fuzzy-octo-system/build/
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target message
-
-
-#############################################
-# Order-only phony target for message
-
-build cmake_object_order_depends_target_message: phony || CMakeFiles/message.dir
-
-build CMakeFiles/message.dir/Message.cpp.o: CXX_COMPILER__message_unscanned_ /home/goldman/fuzzy-octo-system/Message.cpp || cmake_object_order_depends_target_message
-  DEP_FILE = CMakeFiles/message.dir/Message.cpp.o.d
-  OBJECT_DIR = CMakeFiles/message.dir
-  OBJECT_FILE_DIR = CMakeFiles/message.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target message
-
-
-#############################################
-# Link the static library libmessage.a
-
-build libmessage.a: CXX_STATIC_LIBRARY_LINKER__message_ CMakeFiles/message.dir/Message.cpp.o
-  OBJECT_DIR = CMakeFiles/message.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = libmessage.a
-  TARGET_PDB = message.a.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target hello-world
 
 
 #############################################
 # Order-only phony target for hello-world
 
-build cmake_object_order_depends_target_hello-world: phony || cmake_object_order_depends_target_message
+build cmake_object_order_depends_target_hello-world: phony || CMakeFiles/hello-world.dir
+
+build CMakeFiles/hello-world.dir/hello-world.cpp.o: CXX_COMPILER__hello-world_unscanned_ /home/goldman/fuzzy-octo-system/hello-world.cpp || cmake_object_order_depends_target_hello-world
+  DEP_FILE = CMakeFiles/hello-world.dir/hello-world.cpp.o.d
+  OBJECT_DIR = CMakeFiles/hello-world.dir
+  OBJECT_FILE_DIR = CMakeFiles/hello-world.dir
 
 build CMakeFiles/hello-world.dir/Message.cpp.o: CXX_COMPILER__hello-world_unscanned_ /home/goldman/fuzzy-octo-system/Message.cpp || cmake_object_order_depends_target_hello-world
   DEP_FILE = CMakeFiles/hello-world.dir/Message.cpp.o.d
@@ -86,8 +62,7 @@ build CMakeFiles/hello-world.dir/Message.cpp.o: CXX_COMPILER__hello-world_unscan
 #############################################
 # Link the executable ======hello-world
 
-build ======hello-world: CXX_EXECUTABLE_LINKER__hello-world_ CMakeFiles/hello-world.dir/Message.cpp.o | libmessage.a || libmessage.a
-  LINK_LIBRARIES = libmessage.a
+build ======hello-world: CXX_EXECUTABLE_LINKER__hello-world_ CMakeFiles/hello-world.dir/hello-world.cpp.o CMakeFiles/hello-world.dir/Message.cpp.o
   OBJECT_DIR = CMakeFiles/hello-world.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -122,8 +97,6 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build hello-world: phony ======hello-world
 
-build message: phony libmessage.a
-
 # =============================================================================
 # Folder targets.
 
@@ -132,7 +105,7 @@ build message: phony libmessage.a
 #############################################
 # Folder: /home/goldman/fuzzy-octo-system/build
 
-build all: phony libmessage.a ======hello-world
+build all: phony ======hello-world
 
 # =============================================================================
 # Built-in targets
@@ -141,14 +114,14 @@ build all: phony libmessage.a ======hello-world
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/goldman/fuzzy-octo-system/CMakeLists.txt /usr/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.27/Modules/Platform/Linux.cmake /usr/share/cmake-3.27/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.4/CMakeCXXCompiler.cmake CMakeFiles/3.27.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/goldman/fuzzy-octo-system/CMakeLists.txt /usr/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.27/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.27/Modules/Platform/Linux.cmake /usr/share/cmake-3.27/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.4/CMakeCXXCompiler.cmake CMakeFiles/3.27.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/goldman/fuzzy-octo-system/CMakeLists.txt /usr/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.27/Modules/Platform/Linux.cmake /usr/share/cmake-3.27/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.4/CMakeCXXCompiler.cmake CMakeFiles/3.27.4/CMakeSystem.cmake: phony
+build /home/goldman/fuzzy-octo-system/CMakeLists.txt /usr/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.27/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.27/Modules/Platform/Linux.cmake /usr/share/cmake-3.27/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.4/CMakeCXXCompiler.cmake CMakeFiles/3.27.4/CMakeSystem.cmake: phony
 
 
 #############################################

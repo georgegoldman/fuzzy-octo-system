@@ -38,4 +38,18 @@ $ cmake --help-module CMakePrintHelpers
 ```
 
 ## Flow control
-
+```
+foreach(<loop_var> <items>)
+  # <commands>
+endforeach()
+```
+## printinng messages
+```
+message([<mode>] "message to display")
+```
+## Controlling the build with options
+```
+option(<variable> "<help_text>" [value])
+cmake_dependent_option(USE_FOO "Use Foo" ON
+                       "USE_BAR;NOT USE_ZOT" OFF)
+```
